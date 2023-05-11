@@ -1,0 +1,24 @@
+paths:
+  /compliance:
+    get:
+      summary: Returns compliance data
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    link:
+                      type: string
+                    text:
+                      type: string
+                  example:
+                    - id: "6442d42ce7ae5bb176d085ee"
+                      link: "https://www.gov.br/anp/pt-br/canais_atendimento/imprensa/noticias-comunicados/anp-assina-acordos-com-universidades-voltados-a-seguranca-e-meio-ambiente"
+                      text: "A ANP assinou esta semana (27/3) dois acordos de cooperação técnica (ACTs) com a COPPE/UFRJ (Universidade Federal do Rio de Janeiro) e com a USP (Universidade de São Paulo). Os acordos têm como objetivo estabelecer um programa de cooperação para desenvolver soluções técnico-científicas práticas relacionadas ao desenvolvimento sustentável na indústria de petróleo, gás natural e biocombustíveis. O ACT a ser assinado com a COPPE/UFRJ visa fazer frente às necessidades do descomissionamento (desativação) de estruturas e equipamentos da produção marítima de óleo e gás no Brasil, mas, também, às questões relacionadas à transição"
